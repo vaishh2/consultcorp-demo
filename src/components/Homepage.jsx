@@ -30,7 +30,7 @@ function HomePage() {
   return (
     <>
       <Navbar />
-
+<div className="global-container">
       {/* HERO */}
       <section className="hero" id="home">
         {images.map((img, i) => (
@@ -126,6 +126,7 @@ function HomePage() {
       </section>
 
       <Footer />
+      </div>
     </>
   );
 }

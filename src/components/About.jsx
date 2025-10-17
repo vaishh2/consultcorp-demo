@@ -21,6 +21,7 @@ const About = () => {
   };
 
   return (
+    <div className="global-container">
     <div className="about-page">
       {/* Hero */}
       <section
@@ -187,6 +188,7 @@ const About = () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 };

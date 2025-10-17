@@ -1,20 +1,21 @@
-/* Prevent horizontal scrolling */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 }
 
-/* Container helper */
-.container {
-  max-width: 1200px;
+
+.global-container {
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
-  padding-left: 4%;
-  padding-right: 4%;
+ 
   box-sizing: border-box;
 }
+
 
 /* Base */
 .about-page { 
@@ -54,11 +55,11 @@ html, body {
   display:flex; 
   align-items:center; 
   gap:40px; 
-  margin: 64px 0;
+  margin: 64px auto;
   width:100%; 
-  box-sizing:border-box; 
-  padding-left:4%; 
-  padding-right:4%;
+   max-width: 1300px;
+  box-sizing: border-box;
+  padding: 0 2rem;
 }
 .about-section.reverse { flex-direction: row-reverse; }
 
@@ -77,8 +78,9 @@ html, body {
 .about-image img { 
   width:100%; 
   height:auto; 
-  display:block; 
-  border-radius:12px; 
+  display:block;
+  margin:10px; 
+  border-radius:18px; 
   object-fit:cover; 
   box-shadow: 0 12px 30px rgba(2,6,23,0.06); 
 }

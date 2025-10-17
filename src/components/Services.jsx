@@ -95,7 +95,7 @@ function Services() {
 
     {/* Why Choose Us */}
     <section className="services-extra" data-aos="fade-up">
-      <h2>Why Choose Habilite Consultancy?</h2>
+      <h2>Why Choose Consultcorp ?</h2>
       <div className="extra-features">
         <div className="feature-box">
           <h4>Proven Track Record</h4>

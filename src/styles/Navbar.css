@@ -2,14 +2,15 @@
 .navbar {
   position: fixed;
   top: 0;
-  width: 95%;
+width: 100%;
+max-width: 100vw;
   height: 6%;
-  padding: 15px 40px;
+  padding: 2.5vw 3vw;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+box-sizing: border-box;
  
   background: rgba(34, 32, 27, 0.7);
   backdrop-filter: blur(8px);

@@ -3,6 +3,7 @@ import "../styles/Footer.css";
 
 function Footer() {
   return (
+   <div className="global-container">
     <footer id="contact">
       <div className="footer-content">
         <h3>Contact Us</h3>
@@ -14,6 +15,7 @@ function Footer() {
         © 2025 ConsultCorp Solutions. All rights reserved.
       </p>
     </footer>
+    </div> 
   );
 }
 
