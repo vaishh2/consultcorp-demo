@@ -1,7 +1,15 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* line 5 changed */
+  box-sizing: border-box;
+}
 /*  HERO  */
 .hero {
     min-width: 320px;
-    width: 130%;
+    width: 100%;
     height: 65vh;
     position: relative;
     display: flex;
@@ -66,7 +74,7 @@
 
 /*  HIGHLIGHT */
 .highlight {
-    width: 130%;
+    width: 100%;
     min-height: 20vh;
     background: url("/images/6th.jpg") center/cover no-repeat;
     color: white;
@@ -187,4 +195,10 @@
 .testimonial h4 {
     margin-top: 15px;
     font-weight: bold;
+}
+@media (max-width: 900px) {
+    .global-container { padding-right :130px;}
+  .hero { height: 50vh; }
+  .hero-content { padding: 14px; }
+  .features-grid, .testimonials-grid { flex-direction: column; align-items: center; gap: 20px; }
 }

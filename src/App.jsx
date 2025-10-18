@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Services from "./components/Services";
-import HomePage from "./components/Homepage";   
+import HomePage from "./components/Homepage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -19,32 +20,37 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        {/* Landing Page */}
-        <Route path="/" element={<HomePage />} />
+      {/* ✅ Responsive wrapper — applied once for all pages */}
+      <div className="w-full px-0 sm:px-2 md:px-6 lg:px-9 overflow-x-hidden">
+        <Routes>
+          {/* Landing Page */}
+          <Route path="/" element={<HomePage />} />
 
-        {/* Other pages */}
-        <Route
-          path="/about"
-          element={
-            <>
-              <Navbar />
-              <About />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/services"
-          element={
-            <>
-              <Navbar />
-              <Services />
-              
-            </>
-          }
-        />
-      </Routes>
+          {/* About Page */}
+          <Route
+            path="/about"
+            element={
+              <>
+                <Navbar />
+                <About />
+                <Footer />
+              </>
+            }
+          />
+
+          {/* Services Page */}
+          <Route
+            path="/services"
+            element={
+              <>
+                <Navbar />
+                <Services />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </div>
     </Router>
   );
 }

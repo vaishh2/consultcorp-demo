@@ -30,6 +30,8 @@ function HomePage() {
   return (
     <>
       <Navbar />
+       <div className="w-full overflow-x-hidden">
+  
 <div className="global-container">
       {/* HERO */}
       <section className="hero" id="home">
@@ -126,6 +128,7 @@ function HomePage() {
       </section>
 
       <Footer />
+      </div>
       </div>
     </>
   );

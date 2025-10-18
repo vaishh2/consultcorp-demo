@@ -305,6 +305,7 @@ body, html {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .global-container{padding-right:130px;}
   .services-heading h2 {
     font-size: 2rem;
   }

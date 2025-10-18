@@ -2,6 +2,7 @@ footer {
   width: 130%;
   background: #2e1c0f;
   color: white;
+  
   padding: 20px 40px 40px 20px;
   text-align: center;
 }
@@ -19,4 +20,7 @@ footer .copyright {
   margin-top: 20px;
   font-size: 0.9rem;
   opacity: 0.8;
+}
+@media(max-width: 900px){
+.global-container {padding-right:130px;}
 }

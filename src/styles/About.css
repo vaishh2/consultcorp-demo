@@ -1,18 +1,17 @@
+/* Prevent horizontal scrolling */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 }
 
-
 .global-container {
-  width: 100%;
-  max-width: 1300px;
+   
   margin: 0 auto;
  
+max-width: 1000px; 
   box-sizing: border-box;
 }
 
@@ -32,6 +31,7 @@ html, body {
   display: flex; 
   align-items: center; 
   justify-content: center;
+  width :100%;
 }
 .about-hero .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
 .about-hero-content {
@@ -53,19 +53,20 @@ html, body {
 /* Sections - zig zag layout */
 .about-section {
   display:flex; 
+
   align-items:center; 
   gap:40px; 
-  margin: 64px auto;
+  margin: 64px 0;
   width:100%; 
-   max-width: 1300px;
-  box-sizing: border-box;
-  padding: 0 2rem;
+  box-sizing:border-box; 
+  padding-left:4%;
+  padding-right:4%;;
 }
 .about-section.reverse { flex-direction: row-reverse; }
 
 /* Prevent overflow on small items */
 .about-text, .about-image { 
-  flex: 1 1 0; 
+  flex: 1 ;
   min-width: 0; 
 }
 
@@ -78,9 +79,8 @@ html, body {
 .about-image img { 
   width:100%; 
   height:auto; 
-  display:block;
-  margin:10px; 
-  border-radius:18px; 
+  display:block; 
+  border-radius:12px; 
   object-fit:cover; 
   box-shadow: 0 12px 30px rgba(2,6,23,0.06); 
 }
@@ -192,6 +192,7 @@ html, body {
 
 /* Responsive */
 @media (max-width: 900px) {
+  .global-container {padding-right:160px;}
   .about-hero-content { padding:20px; }
   .about-hero { height: 56vh; }
   
