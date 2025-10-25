@@ -1,10 +1,11 @@
+/* Footer styles */
 footer {
-  width: 130%;
+  width: 100%;  /* Changed from 130% to 100% - full width, no overflow */
   background: #2e1c0f;
   color: white;
-  
-  padding: 20px 40px 40px 20px;
+  padding: 20px 0;  /* Simplified padding - vertical only, horizontal handled by content */
   text-align: center;
+  box-sizing: border-box;  /* Ensures padding doesn't cause overflow */
 }
 
 footer h3 {
@@ -21,6 +22,16 @@ footer .copyright {
   font-size: 0.9rem;
   opacity: 0.8;
 }
-@media(max-width: 900px){
-.global-container {padding-right:130px;}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .global-container {
+    /* Removed the erroneous padding-right:130px; - no excessive padding */
+  }
+  footer {
+    padding: 15px 0;  /* Slightly reduced vertical padding on mobile */
+  }
+  footer h3 {
+    font-size: 1.5rem;  /* Smaller heading on mobile */
+  }
 }

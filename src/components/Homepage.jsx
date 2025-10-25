@@ -30,105 +30,104 @@ function HomePage() {
   return (
     <>
       <Navbar />
-       <div className="w-full overflow-x-hidden">
-  
-<div className="global-container">
-      {/* HERO */}
-      <section className="hero" id="home">
-        {images.map((img, i) => (
-          <div
-            key={i}
-            className={`hero-bg ${i === index ? "active" : ""}`}
-            style={{ backgroundImage: `url(${img})` }}
-          />
-        ))}
-        <div className="hero-content">
-          <h1>Empowering Businesses with Smart Consulting</h1>
-          <p>
-            ConsultCorp helps organizations accelerate growth, streamline
-            processes, and unlock their full potential through modern consulting
-            and digital solutions.
-          </p>
-          <div className="hero-buttons">
-            <button className="btn-primary" onClick={handleServicesClick}>
-              Our Services
-            </button>
-            <button className="btn-secondary" onClick={handleContactClick}>
-              Get in Touch
-            </button>
-          </div>
-        </div>
-      </section>
+      <div className="w-full overflow-x-hidden">
+        <div className="global-container">
+          {/* HERO */}
+          <section className="hero" id="home">
+            {images.map((img, i) => (
+              <div
+                key={i}
+                className={`hero-bg ${i === index ? "active" : ""}`}
+                style={{ backgroundImage: `url(${img})` }}
+              />
+            ))}
+            <div className="hero-content px-4 sm:px-6 md:px-8 lg:px-12">  {/* Added responsive padding */}
+              <h1>Empowering Businesses with Smart Consulting</h1>
+              <p>
+                ConsultCorp helps organizations accelerate growth, streamline
+                processes, and unlock their full potential through modern consulting
+                and digital solutions.
+              </p>
+              <div className="hero-buttons">
+                <button className="btn-primary" onClick={handleServicesClick}>
+                  Our Services
+                </button>
+                <button className="btn-secondary" onClick={handleContactClick}>
+                  Get in Touch
+                </button>
+              </div>
+            </div>
+          </section>
 
-      {/* FEATURES */}
-      <section className="features" id="about" data-aos="fade-down">
-        <h2>Our Core Strengths</h2>
-        <div className="features-grid">
-          <div className="feature-card" data-aos="zoom-in" data-aos-delay="100">
-            <h3>Expert Consulting</h3>
-            <p>
-              Strategic, data-driven consulting designed to meet your business
-              objectives.
-            </p>
-          </div>
-          <div className="feature-card" data-aos="zoom-in" data-aos-delay="200">
-            <h3>Innovative Solutions</h3>
-            <p>
-              Leveraging modern technologies to drive digital transformation and
-              efficiency.
-            </p>
-          </div>
-          <div className="feature-card" data-aos="zoom-in" data-aos-delay="300">
-            <h3>Proven Results</h3>
-            <p>
-              Our clients achieve measurable improvements in productivity and
-              performance.
-            </p>
-          </div>
-        </div>
-      </section>
+          {/* FEATURES */}
+          <section className="features px-4 sm:px-6 md:px-8 lg:px-12" id="about" data-aos="fade-down">  {/* Added responsive padding */}
+            <h2>Our Core Strengths</h2>
+            <div className="features-grid">
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>Expert Consulting</h3>
+                <p>
+                  Strategic, data-driven consulting designed to meet your business
+                  objectives.
+                </p>
+              </div>
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Innovative Solutions</h3>
+                <p>
+                  Leveraging modern technologies to drive digital transformation and
+                  efficiency.
+                </p>
+              </div>
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                <h3>Proven Results</h3>
+                <p>
+                  Our clients achieve measurable improvements in productivity and
+                  performance.
+                </p>
+              </div>
+            </div>
+          </section>
 
-      {/* HIGHLIGHT */}
-      <section className="highlight" data-aos="fade-down">
-        <div className="highlight-content">
-          <h2>Building Smarter, Sustainable Businesses</h2>
-          <p>
-            We partner with companies to design scalable systems, streamline
-            operations, and create long-term business value.
-          </p>
-        </div>
-      </section>
+          {/* HIGHLIGHT */}
+          <section className="highlight px-4 sm:px-6 md:px-8 lg:px-12" data-aos="fade-down">  {/* Added responsive padding */}
+            <div className="highlight-content">
+              <h2>Building Smarter, Sustainable Businesses</h2>
+              <p>
+                We partner with companies to design scalable systems, streamline
+                operations, and create long-term business value.
+              </p>
+            </div>
+          </section>
 
-      {/* TESTIMONIALS */}
-      <section className="testimonials" data-aos="fade-down" id="clients">
-        <h2>What Our Clients Say</h2>
-        <div className="testimonials-grid">
-          <div className="testimonial" data-aos="fade-down" data-aos-delay="100">
-            <p>
-              "ConsultCorp helped us reimagine our processes and boosted
-              efficiency across departments."
-            </p>
-            <h4>- Alex Johnson</h4>
-          </div>
-          <div className="testimonial" data-aos="fade-down" data-aos-delay="200">
-            <p>
-              "Their team is incredibly knowledgeable and focused on delivering
-              real impact."
-            </p>
-            <h4>- Maya Patel</h4>
-          </div>
-          <div className="testimonial" data-aos="fade-down" data-aos-delay="300">
-            <p>
-              "We’ve seen tangible business improvements since partnering with
-              ConsultCorp."
-            </p>
-            <h4>- Daniel Lee</h4>
-          </div>
-        </div>
-      </section>
+          {/* TESTIMONIALS */}
+          <section className="testimonials px-4 sm:px-6 md:px-8 lg:px-12" data-aos="fade-down" id="clients">  {/* Added responsive padding */}
+            <h2>What Our Clients Say</h2>
+            <div className="testimonials-grid">
+              <div className="testimonial" data-aos="fade-down" data-aos-delay="100">
+                <p>
+                  "ConsultCorp helped us reimagine our processes and boosted
+                  efficiency across departments."
+                </p>
+                <h4>- Alex Johnson</h4>
+              </div>
+              <div className="testimonial" data-aos="fade-down" data-aos-delay="200">
+                <p>
+                  "Their team is incredibly knowledgeable and focused on delivering
+                  real impact."
+                </p>
+                <h4>- Maya Patel</h4>
+              </div>
+              <div className="testimonial" data-aos="fade-down" data-aos-delay="300">
+                <p>
+                  "We’ve seen tangible business improvements since partnering with
+                  ConsultCorp."
+                </p>
+                <h4>- Daniel Lee</h4>
+              </div>
+            </div>
+          </section>
 
-      <Footer />
-      </div>
+          <Footer />
+        </div>
       </div>
     </>
   );
