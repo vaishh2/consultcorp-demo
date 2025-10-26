@@ -21,7 +21,7 @@ function App() {
   return (
     <Router>
       {/* ✅ Responsive wrapper — applied once for all pages */}
-      <div className="w-full px-0 sm:px-2 md:px-6 lg:px-9 overflow-x-hidden">
+      <div className="app-wrapper w-full overflow-x-hidden">
         <Routes>
           {/* Landing Page */}
           <Route path="/" element={<HomePage />} />

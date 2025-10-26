@@ -45,7 +45,7 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100vh;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 
 h1 {
@@ -100,11 +100,16 @@ video {
 #root {
   width: 100%;
 }
-img, video {
-  max-width: 100%;
-  height: auto;
-}
+
 
 p, h1, h2, h3 {
   line-height: 1.5;
 }
+.app-wrapper {
+  width: 100%;
+  margin: 0 auto;  /* Center on large screens */
+}
+@media (min-width: 1200px) {
+  .app-wrapper {
+    max-width: 1600px;  /* Constrain on ultra-wide screens to prevent gaps/stretching */
+  }}
