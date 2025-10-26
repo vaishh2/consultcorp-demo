@@ -191,7 +191,7 @@ html, body {
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .global-container {
     width: 100%;/* No changes needed - already full-width */
   }
