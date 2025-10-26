@@ -107,7 +107,7 @@ p, h1, h2, h3 {
 }
 .app-wrapper {
   width: 100%;
-  margin: 0 auto;  /* Center on large screens */
+  /*margin: 0 auto;   Center on large screens */
 }
 @media (min-width: 1200px) {
   .app-wrapper {
