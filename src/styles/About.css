@@ -27,8 +27,8 @@ html, body {
   background-size: cover;
   background-position: center;
   display: flex; 
-  align-items: center; 
-  justify-content: center;
+  
+  
   width: 100%;
 }
 .about-hero .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
@@ -39,10 +39,10 @@ html, body {
   padding: 28px; 
   border-radius: 12px;
   text-align: center; 
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   box-shadow: 0 20px 40px rgba(2,6,23,0.12);
-  margin: 0 4%;  /* Added margin for hero content spacing */
+  margin: 0 2%;  /* Added margin for hero content spacing */
 }
 .about-hero-content h1 { color: #0f172a; font-size: 2.4rem; margin: 0 0 8px; }
 .about-hero-content .lead { color: #334155; font-size: 1.05rem; margin-bottom: 16px; }
@@ -58,7 +58,7 @@ html, body {
   margin: 64px 0;
   width: 100%;
   box-sizing:border-box; 
-  padding: 0 2%;  /* Added padding here for text spacing - prevents sticking to edges */
+  padding: 0 1%;  /* Added padding here for text spacing - prevents sticking to edges */
 }
 .about-section.reverse { flex-direction: row-reverse; }
 
@@ -87,7 +87,7 @@ html, body {
 .about-timeline { background:#f8fafc; padding:40px 4%; margin-top:40px; width: 100%; }  /* Added padding */
 .about-timeline h2 { text-align:center; color:#0f172a; margin-bottom:20px; }
 .timeline { 
-  max-width:900px; 
+  max-width:1200px; 
   margin: 0 auto; 
   display:flex; 
   gap:16px; 
@@ -200,7 +200,7 @@ html, body {
     width:100%;
   }
   .about-hero-content {
-    padding: 10px;
+    padding: 5px;
     max-width: 100%;
     margin: 0 2%;  /* Reduced margin on mobile */
   }
@@ -208,7 +208,7 @@ html, body {
     flex-direction: column; 
     gap:20px; 
     margin: 36px 0; width:100%;
-    padding: 0 2%;  /* Reduced padding on mobile */
+    padding: 0 1%;  /* Reduced padding on mobile */
   }
   /* Zigzag FIX on mobile */
   .about-section.reverse .about-text { order: 2; }
