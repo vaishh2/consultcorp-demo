@@ -13,14 +13,12 @@ html, body {
   /* Removed padding here - we'll add it to sections instead */
 }
 
-/* Base */
 .about-page { 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
   color: #333; 
   width: 100%;
 }
 
-/* HERO */
 .about-hero {
   position: relative;
   height: 70vh;
@@ -217,4 +215,22 @@ html, body {
   .about-timeline { padding:40px 2%; }  /* Reduced */
   .about-team { padding:40px 2%; }  /* Reduced */
   .cta-banner { padding:40px 2%; }  /* Reduced */
+}
+
+/* New: Full-width on big screens (like navbar) */
+@media (min-width: 1200px) {
+  .about-section, .about-timeline, .about-team, .cta-banner {
+    padding-left: 0;  /* Remove left padding */
+    padding-right: 0;  /* Remove right padding */
+    width: 100%;  /* Full width */
+  }
+  .about-hero-content {
+    margin: 0;  /* Remove margins */
+    max-width: none;  /* No max-width limit */
+    width: 100%;
+  }
+  .timeline, .team-grid {
+    max-width: none;  /* No max-width on grids */
+    width: 100%;
+  }
 }

@@ -30,7 +30,7 @@ const About = () => {
             style={{ backgroundImage: `url("/images/2nd.jpg")` }}
           >
             <div className="overlay" />
-            <div className="about-hero-content container fade-up px-4 sm:px-6 md:px-8 lg:px-12">  {/* Added responsive padding for better adaptation */}
+            <div className="about-hero-content fade-up px-4 sm:px-6 md:px-8 lg:px-12">  {/* Removed 'container' class to avoid centering conflicts */}
               <h1>About ConsultCorp</h1>
               <p className="lead">
                 We are a team of business and technology professionals helping
