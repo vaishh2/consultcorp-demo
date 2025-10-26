@@ -6,26 +6,23 @@
 /* Prevent any overflow globally */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  
 }
+
+/* Note: Removed duplicate * selector below to avoid redundancy */
 
 html, body, #root {
   width: 100%;
- box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-width:100%;
+  width: 100%;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #f2eeee;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -42,7 +39,6 @@ a:hover {
 }
 
 body {
-  margin: 0;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -86,30 +82,22 @@ button:focus-visible {
 }
 
 /* --- Global Responsive Fixes --- */
-* {
-  box-sizing: border-box;
-  
-}
-
-img,
-video {
+img, video {
   max-width: 100%;
   height: auto;
 }
 
-#root {
-  width: 100%;
-}
-
-
 p, h1, h2, h3 {
   line-height: 1.5;
 }
+
 .app-wrapper {
   width: 100%;
-  /*margin: 0 auto;   Center on large screens */
 }
+
 @media (min-width: 1200px) {
   .app-wrapper {
-    max-width: 1600px;  /* Constrain on ultra-wide screens to prevent gaps/stretching */
-  }}
+    width: 100%;  /* Constrain on ultra-wide screens */
+     /* Center the constrained width - fixes gaps on large screens */
+  }
+}
