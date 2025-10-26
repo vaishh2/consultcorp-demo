@@ -95,7 +95,7 @@ p, h1, h2, h3 {
   width: 100%;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1440px) {
   .app-wrapper {
     width: 100%;  /* Constrain on ultra-wide screens */
      /* Center the constrained width - fixes gaps on large screens */
