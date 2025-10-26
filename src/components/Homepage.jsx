@@ -41,7 +41,7 @@ function HomePage() {
                 style={{ backgroundImage: `url(${img})` }}
               />
             ))}
-            <div className="hero-content px-4 sm:px-6 md:px-8 lg:px-12">  {/* Added responsive padding */}
+            <div className="hero-content app-wrapper w-full overflow-x-hidden">  {/* Added responsive padding */}
               <h1>Empowering Businesses with Smart Consulting</h1>
               <p>
                 ConsultCorp helps organizations accelerate growth, streamline
@@ -60,7 +60,7 @@ function HomePage() {
           </section>
 
           {/* FEATURES */}
-          <section className="features px-4 sm:px-6 md:px-8 lg:px-12" id="about" data-aos="fade-down">  {/* Added responsive padding */}
+          <section className="features app-wrapper w-full overflow-x-hidden" id="about" data-aos="fade-down">  {/* Added responsive padding */}
             <h2>Our Core Strengths</h2>
             <div className="features-grid">
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="100">
@@ -88,7 +88,7 @@ function HomePage() {
           </section>
 
           {/* HIGHLIGHT */}
-          <section className="highlight px-4 sm:px-6 md:px-8 lg:px-12" data-aos="fade-down">  {/* Added responsive padding */}
+          <section className="highlight app-wrapper w-full overflow-x-hidden" data-aos="fade-down">  {/* Added responsive padding */}
             <div className="highlight-content">
               <h2>Building Smarter, Sustainable Businesses</h2>
               <p>
@@ -99,7 +99,7 @@ function HomePage() {
           </section>
 
           {/* TESTIMONIALS */}
-          <section className="testimonials px-4 sm:px-6 md:px-8 lg:px-12" data-aos="fade-down" id="clients">  {/* Added responsive padding */}
+          <section className="testimonials app-wrapper w-full overflow-x-hidden" data-aos="fade-down" id="clients">  {/* Added responsive padding */}
             <h2>What Our Clients Say</h2>
             <div className="testimonials-grid">
               <div className="testimonial" data-aos="fade-down" data-aos-delay="100">

@@ -21,7 +21,7 @@ const About = () => {
   };
 
   return (
-    <div className="about-page w-full overflow-x-hidden">
+    <div className="about-page w-full app-wrapper overflow-x-hidden">
       <div className="global-container">
         <div className="about-page">
           {/* Hero */}
@@ -30,7 +30,7 @@ const About = () => {
             style={{ backgroundImage: `url("/images/2nd.jpg")` }}
           >
             <div className="overlay"/>
-            <div className="about-hero-content fade-up px-4 sm:px-6 md:px-8 lg:px-12">  
+            <div className="about-hero-content fade-up app-wrapper w-full overflow-x-hidden">  
               <h1>About ConsultCorp</h1>
               <p className="lead">
                 We are a team of business and technology professionals helping
