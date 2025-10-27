@@ -84,7 +84,7 @@ button:focus-visible {
 
 /* --- Global Responsive Fixes --- */
 img, video {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -95,9 +95,9 @@ p, h1, h2, h3 {
 /* Global container - FIXED: Full width with max-width for large screens */
 .global-container {
   width: 100%; /* Always full width */
-  max-width: 1440px; /* Constrain on ultra-wide screens (e.g., 17-inch) */
-  margin: 0 auto; /* Center the content */
-  padding: 0 clamp(10px, 2vw, 20px); /* Small horizontal padding for breathing room */
+  /*max-width: 1440px; /* Constrain on ultra-wide screens (e.g., 17-inch) */
+   /* Center the content */
+  padding: 0 clamp(5px, 1vw, 5px); /* Small horizontal padding for breathing room */
   box-sizing: border-box;
 }
 
@@ -106,21 +106,22 @@ p, h1, h2, h3 {
   width: 100%;
 }
 
-/* Responsive: Ultra-wide screens (e.g., 17-inch monitors) */
+
+/* Responsive: Ultra-wide screens (e.g., 17-inch monitors) 
 @media (min-width: 1441px) {
   .global-container {
     max-width: 1440px; /* Prevent excessive width */
-    padding: 0 0px; /* Add padding for gaps on very large screens */
+    /*padding: 0 0px;  Add padding for gaps on very large screens 
   }
 }
 
-/* Mobile adjustments */
+/* Mobile adjustments 
 @media (max-width: 768px) {
   .global-container {
-    padding: 0 0px; /* Reduce padding on small screens */
+    padding: 0 0px; /* Reduce padding on small screens 
   }
     h1 {
-    font-size: 2rem; /* Smaller on mobile */
+    font-size: 2rem; /* Smaller on mobile 
   }
   
-}
+}*/

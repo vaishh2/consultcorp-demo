@@ -1,9 +1,9 @@
 /* Navbar Container */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 1;
   width: 100%;
-  height: 6%;
+  height: 4%;
   padding: 2.5vw 3vw;  /* Kept vw for responsiveness, but adjusted for consistency */
   z-index: 1000;
   display: flex;

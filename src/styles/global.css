@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevents horizontal scroll */
-  box-sizing: border-box;
+ 
 }
 
 /* HERO */
@@ -197,9 +197,7 @@ html, body {
 }
 
 @media (max-width: 1440px) {
-  .global-container {
-    /* Removed padding-right:130px; - no excessive padding */
-  }
+  
   .hero { height: 50vh; }
   .hero-content { padding: 14px; }
   .features-grid, .testimonials-grid { flex-direction: column; align-items: center; gap: 20px; }
