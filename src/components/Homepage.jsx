@@ -30,7 +30,7 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <div className="w-full overflow-x-hidden">
+      <div className="w-full app-wrapper overflow-x-hidden">
         <div className="global-container">
           {/* HERO */}
           <section className="hero" id="home">

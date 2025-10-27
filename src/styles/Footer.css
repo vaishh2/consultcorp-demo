@@ -9,7 +9,7 @@ footer {
 }
 
 footer h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 20px;
 }
 
@@ -25,9 +25,7 @@ footer .copyright {
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  .global-container {
-    /* Removed the erroneous padding-right:130px; - no excessive padding */
-  }
+ 
   footer {
     padding: 15px 0;  /* Slightly reduced vertical padding on mobile */
   }
